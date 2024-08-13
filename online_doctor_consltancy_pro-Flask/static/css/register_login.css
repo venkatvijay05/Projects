@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-photo/medicine-blue-background-flat-lay_23-2149341573.jpg?w=1060&t=st=1697380388~exp=1697380988~hmac=e6b79cd3c1177e11724a5ec7c6089e4a795bcb8055c5eedc96c1b1a1d36e52c7);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.cantainer {
+    width: 420px;
+    height: auto;
+    background: hsl(203, 99%, 76%);
+    color: #000;
+    padding: 30px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cantainer h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+/* .form-group label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+} */
+
+.form_group {
+    padding-top: 20px;
+    font-weight: bold
+}
+
+.form_group label {
+    font-size: 14px;
+}
+
+.form_group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: solid 1px #333;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    margin: 25px 0;
+    color: #fff;
+    background: #333;
+    border: none;
+    outline:auto;
+    border-radius: 5px;
+    
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background: #000;
+}
+
+.login {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button a {
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}

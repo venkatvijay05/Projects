@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block body %}
+    <div class="cantainer">
+        <form action="/home" method="post" autocomplete="off">
+            <h1>Login</h1>
+            <div class="form_group">
+                <label for="">Email:</label>
+                <input type="email" placeholder="Enter Email" name="uemail" required>
+            </div>
+            <div class="form_group">
+                <label for="">Password:</label>
+                <input type="password" placeholder="Enter password" name="upass" required>
+            </div>
+            
+
+            <button class="button" name="userlogin">Submit</button>
+        
+        </form>
+    </div>
+{% endblock %}

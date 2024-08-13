@@ -1,0 +1,249 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+nav {
+   width: 100%;
+   height: 85px;
+   line-height: 40px;
+   padding: 10px;
+   position: fixed;
+   background-image: linear-gradient(#033747, #012733);
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   float: left;
+   padding: 10px;
+   height: 35px;
+   margin: 5px;
+   width: 10px;
+}
+
+.logo img {
+   width: 30px;
+   /* Adjust the width as needed */
+   height: auto;
+   /* Adjust the height as needed */
+   float: left;
+}
+
+nav .logo p {
+   font-size: 36px;
+   font-weight: bold;
+   float: left;
+   color: white;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   cursor: pointer;
+}
+
+nav ul {
+   float: right;
+   padding: 10px;
+}
+
+nav li {
+   display: inline-block;
+   list-style: none;
+}
+
+nav li a {
+   font-size: 16px;
+   font-weight: bold;
+   text-transform: uppercase;
+   padding: 30px;
+   color: white;
+   text-decoration: none;
+}
+
+nav li a:hover {
+   color: #ff8c69;
+   transition: all 0.4s ease 0s;
+}
+
+.dropdown {
+   position: relative;
+   display: inline-block;
+
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #033747;
+   min-width: 10px;
+   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.dropdown-content a {
+   color: white;
+   padding: 1px 10px;
+   text-decoration: none;
+   display: block;
+}
+
+.dropdown-content a:hover {
+   transition: all 0.4s ease 0s;
+}
+
+
+.content-items img {
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+}
+
+
+
+.slide-row {
+   display: flex;
+   width: 3200px;
+}
+
+.slide-col {
+   width: 800px;
+   height: 400px;
+   position: relative;
+}
+
+.user-img {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 70%;
+}
+
+.user-img img {
+   height: 100%;
+   border-radius: 10px
+}
+
+.user-text {
+   background: #033747;
+   width: 520px;
+   height: 270px;
+   position: absolute;
+   border-radius: 10px;
+   left: 0;
+   top: 50%;
+   transform:translatey(-50);
+   border-radius:10px;
+   color: #d3d4d6;
+   padding: 45px;
+   box-sizing: border-box;
+   z-index: 0;
+}
+
+.user-text p {
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.user-text h3 {
+   margin: 25px 0 3px;
+   color: #fff;
+   font-weight: bold;
+}
+
+.user-text h2 {
+   margin: 25px 0 3px;
+   color: #fff;
+   font-weight: bold;
+}
+
+.container {
+   width: 800px;
+   height: 640px;
+   position: absolute;
+   top: 20%;
+   left: 0%;
+}
+
+.carousel {
+   width: 60%;
+   margin: auto;
+   float: left;
+}
+
+.carousel-inner {
+   height: 270px;
+   /* Set the desired height for the carousel */
+   border-radius: 25px;
+}
+
+.carousel-inner>.item>img {
+   width: 100%;
+   height: 70%;
+}
+
+/* login css */
+
+/* body {
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   font-family: sans-serif;
+} */
+
+.cantainer {
+   width: 420px;
+   height: auto;
+   background: hsl(203, 99%, 76%);
+   color: #000;
+   padding: 30px 20px;
+   position: absolute;
+   top: 50%;
+   left: 70%;
+   transform: translate(-50%, -50%);
+}
+
+.cantainer h1 {
+   text-align: center;
+   font-size: 28px;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.form_group {
+   padding-top: 20px;
+   font-weight: bold
+}
+
+.form_group label {
+   font-size: 14px;
+}
+
+.form_group input {
+   width: 100%;
+   padding: 10px;
+   margin-top: 5px;
+   border: solid 1px #333;
+}
+
+.button {
+   width: 100%;
+   padding: 10px;
+   margin: 25px 0;
+   color: #fff;
+   background: #333;
+   border: none;
+   outline:auto;
+   border-radius: 5px;
+   
+   font-size: 15px;
+   transition: all 0.3s;
+}
+
+.button:hover {
+   background: #000;
+}

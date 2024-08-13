@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{url_for('static',
+filename='css/register_login.css')}}">
+
+<body>
+    <div class="cantainer">
+        <form action="/home" method="post" class="form">
+            <h1>Registration</h1>
+            
+            <div class="form_group">
+                <lable for="">Full Name:</lable>
+                <input type="text" placeholder="FullName" name="uname" required>
+            </div>
+
+            <div class="form_group">
+                <lable for="">Email:</lable>
+                <input type="email" placeholder="Enter Email" name="uemail" required>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="male">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div> -->
+
+            <div class="form_group">
+                <lable for="">Age:</lable>
+                <input type="number" placeholder="123" name="uage" required>
+            </div>
+
+
+            <div class="form_group">
+                <lable for="">Contact Number:</lable>
+                <input type="text" placeholder="123456789" name="ucontact" required>
+            </div>
+
+            <div class="form_group">
+                <lable for="">Password:</lable>
+                <input type="password" placeholder="password" name="upass" required>
+            </div>
+
+            <!-- <div class="form_group">
+                <lable for="">re-password:</lable>
+                <input type="password" placeholder="Re-password" required>
+            </div> -->
+
+            <button class="button" name="signin">Submit</button>
+
+            <div class="login">
+                <span>I have a account <a href="email.html">login</a></span>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

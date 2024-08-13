@@ -1,0 +1,113 @@
+{% extends "doctorvisit.html" %}
+{% block title %}Eye doctor{% endblock%}
+
+{% block body %}
+
+<nav>
+    <header>
+        <div class="logo">
+            <img src="{{url_for('static',filename='images/2.jpg')}}" alt="Logo">
+        </div>
+    </header>
+    <div class="logo">
+        <p>MEDICO</p>
+    </div>
+    <ul>
+        <li class="dropdown">
+            <a href="doctorvisit">All Doctor's specialist</a>
+                <div class="dropdown-content">
+                    <a href="gc">General Doctor</a>
+                    <a href="skin">Skin Doctor</a>
+                    <a href="eye">Eye Doctor</a>
+                    <a href="cardio">Cardio Doctor</a>
+                </div>
+            </div>
+        </li>
+
+        <li><a href="gc">General Doctor</a></li>
+        <li><a href="skin">Skin Doctor</a></li>
+       
+        <li><a href="eye">Eye Doctor</a></li>
+        <li><a href="cardio">cardio Doctor</a></li>
+        <li><a href="register">profile</a></li>    <!-- profile link bending-->
+        <li><a href="logout">logout</a></li>
+        <li><a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-map-marker-alt"></i>
+            </a></li>
+    </ul>
+</nav>
+
+    <!-- <nav>
+        <ul>
+            <li><a href="doctorvisit">All</a></li>
+            <li><a href="gc">General Doctor</a></li>
+            <li><a href="skin">Skin Doctor</a></li>
+            <li><a href="eye">Eye Doctor</a></li>
+            <li><a href="cardio">Cardiologist</a></li>
+        </ul>
+    </nav> -->
+    <div class="cards">
+        <div class="card">
+            <div class="image">
+                <img src="{{url_for('static',filename='images/eye.jpg')}}" alt="">
+            </div>
+            <div class="content">
+                <h1 class="heading">EYE SPECIALIST</h1>
+                <p class="desc"> Dr Shandeep Kumar(M.B.B.S,D.O)</p>
+                <div class="follow-box">
+                    <div class="follow">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Address:- No 82, Muthumariamman Swamy Koil Street, Chinnaiyan Colony Nagar, Perambur Mills Road,
+                            Chennai, Tamil Nadu
+                            600039.
+                        </p>
+                    </div>
+                    <div class="follow">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <p>Mon - Sun: 8 am - 8 pm</p>
+                    </div>
+                </div>
+                <div class="sep">
+                    <div class="seps">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>7738360462</p>
+                    </div>
+                    <div class="seps">
+                        <i class="fa-solid fa-diamond-turn-right"></i>
+                        <p>Directions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image">
+                <img src="{{url_for('static',filename='images/eye1.jpg')}}" alt="">
+            </div>
+            <div class="content">
+                <h1 class="heading">EYE SPECIALIST</h1>
+                <p class="desc"> Dr Arulmozhi Varman(Ophthalmologist)</p>
+                <div class="follow-box">
+                    <div class="follow">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Address:- No 55, Karthik Tiffin Centre , Uma Eye Clinic , Right Opposite To Hotchips , Anna Nagar
+                            West , Chennai , Tamil Nadu 600025.</p>
+                    </div>
+                    <div class="follow">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        <p>Mon - Sun: 7 am - 8 pm</p>
+                    </div>
+                </div>
+                <div class="sep">
+                    <div class="seps">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>9938360462</p>
+                    </div>
+                    <div class="seps">
+                        <i class="fa-solid fa-diamond-turn-right"></i>
+                        <p>Directions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
